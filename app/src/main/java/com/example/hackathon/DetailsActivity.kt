@@ -11,18 +11,18 @@ import com.example.hackathon.R
 
 class DetailsActivity : AppCompatActivity() {
 
-    lateinit var titleForDetails1: TextView
-    lateinit var titleForDetails2: TextView
-    lateinit var mainForDetails1: TextView
-    lateinit var mainForDetails2: TextView
-    lateinit var textViewForDetails1: TextView
-    lateinit var textViewForDetails2: TextView
-    lateinit var textViewForDetailsMajor1: TextView
-    lateinit var textViewForDetailsMajor2: TextView
+    private lateinit var titleForDetails1: TextView
+    private lateinit var titleForDetails2: TextView
+    private lateinit var mainForDetails1: TextView
+    private lateinit var mainForDetails2: TextView
+    private lateinit var textViewForDetails1: TextView
+    private lateinit var textViewForDetails2: TextView
+    private lateinit var textViewForDetailsMajor1: TextView
+    private lateinit var textViewForDetailsMajor2: TextView
 
-    lateinit var backButton: RelativeLayout
+    private lateinit var backButton: RelativeLayout
 
-    lateinit var secondResult: LinearLayout
+    private lateinit var secondResult: LinearLayout
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
