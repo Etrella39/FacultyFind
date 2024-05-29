@@ -82,7 +82,7 @@ class HomeActivity : AppCompatActivity() {
         questionTextNumberProgress = findViewById(R.id.progress1)
 
         // Random
-        questions = questions.shuffled()
+        // questions = questions.shuffled()
         setQuestion()
 
         radioGroup.setOnCheckedChangeListener { _, checkedId ->

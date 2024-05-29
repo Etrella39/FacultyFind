@@ -29,22 +29,6 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.details_screen)
 
-//        val europeScore = intent.getStringExtra("Europe_String")
-//        val asiaScore = intent.getStringExtra("Asia_String")
-//        val universityScore = intent.getStringExtra("University_String")
-//        val itScore = intent.getStringExtra("IT_String")
-//        val digitalScore = intent.getStringExtra("Digital_String")
-//        val socialScore = intent.getStringExtra("Social_String")
-//
-//        val scoreMap = mapOf (
-//            "Europe" to europeScore,
-//            "Asia" to asiaScore,
-//            "University" to universityScore,
-//            "IT" to itScore,
-//            "Digital" to digitalScore,
-//            "Social" to socialScore
-//        )
-
         secondResult = findViewById(R.id.second_result)
 
         val majorCount = intent.getIntExtra("Major_Count", Int.MIN_VALUE)
@@ -64,7 +48,7 @@ class DetailsActivity : AppCompatActivity() {
         textViewForDetailsMajor1.text = intent.getStringExtra("DETAIL_TEXT_Major1")
 
         if (majorCount == 1) {
-            secondResult.visibility = View.GONE;
+            secondResult.visibility = View.GONE
         } else if (majorCount == 2) {
             titleForDetails2 = findViewById(R.id.details_faculty_text_second)
             mainForDetails2 = findViewById(R.id.result_second)

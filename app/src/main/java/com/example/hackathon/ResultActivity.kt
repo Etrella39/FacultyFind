@@ -93,7 +93,7 @@ class ResultActivity : AppCompatActivity() {
                 resultMajor1.text = "IT 대학"
             else if (maxKey == "Digital")
                 resultMajor1.text = "디지털미디어 대학"
-            else
+            else if (maxKey == "Social")
                 resultMajor1.text = "사회과학 대학"
 
             val remainingKeys = valueKeys.toMutableSet() // 가변적인 집합으로 변환
@@ -112,8 +112,8 @@ class ResultActivity : AppCompatActivity() {
                 resultMajor2.text = "IT 대학"
             else if (remainingKeys.first() == "Digital")
                 resultMajor2.text = "디지털미디어 대학"
-            else
-                resultMajor1.text = "사회과학 대학"
+            else if (remainingKeys.first() == "Social")
+                resultMajor2.text = "사회과학 대학"
 
             detailText1 = resultMajor1.text.toString()
             detailText2 = resultMajor2.text.toString()
@@ -157,24 +157,24 @@ class ResultActivity : AppCompatActivity() {
 
     private fun getDetailTextForResult (result: String): String {
         return when (result) {
+            "유럽미주 대학" -> getString(R.string.details_for_europe)
+            "아시아 대학" -> getString(R.string.details_for_asia)
+            "상경 대학" -> getString(R.string.details_for_sang)
             "IT 대학" -> getString(R.string.details_for_IT)
             "디지털미디어 대학" -> getString(R.string.details_for_digitalMedia)
             "사회과학 대학" -> getString(R.string.details_for_society)
-            "상경 대학" -> getString(R.string.details_for_sang)
-            "아시아 대학" -> getString(R.string.details_for_asia)
-            "유럽미주 대학" -> getString(R.string.details_for_europe)
             else -> ""
         }
     }
 
     private fun getDetailTextForResultMajor (result: String): String {
         return when (result) {
+            "유럽미주 대학" -> getString(R.string.details_for_europe_Major)
+            "아시아 대학" -> getString(R.string.details_for_asia_Major)
+            "상경 대학" -> getString(R.string.details_for_sang_Major)
             "IT 대학" -> getString(R.string.details_for_IT_Major)
             "디지털미디어 대학" -> getString(R.string.details_for_digitalMedia_Major)
             "사회과학 대학" -> getString(R.string.details_for_society_Major)
-            "상경 대학" -> getString(R.string.details_for_sang_Major)
-            "아시아 대학" -> getString(R.string.details_for_asia_Major)
-            "유럽미주 대학" -> getString(R.string.details_for_europe_Major)
             else -> ""
         }
     }
