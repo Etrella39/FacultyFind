@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/result_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+<!--     logo       -->
+            <RelativeLayout
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="77dp">
+            <TextView
+                android:id="@+id/bufs"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="BUFS"
+                android:textColor="#000000"
+                android:textSize="77sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_main"
+                android:layout_width="320dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/bufs"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:fontFamily="@font/pretendard_bold"
+                android:text="@string/last_text_1"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/pretendard_bold"
+                android:includeFontPadding="false"
+                android:text="BUFS"
+                android:textAppearance="@style/bufs_shadow">
+
+            </TextView>
+            </RelativeLayout>
+<!--노란색 창-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/radius"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+<!-- first result -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/detail_text"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/details_faculty_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/pretendard_semibold"
+                            android:gravity="center"
+                            android:text="@string/result_detail_title"
+                            android:textAppearance="@style/detail_text">
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:id="@+id/result_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:gravity="center"
+                                android:text="유럽미주 대학"
+                                android:textAppearance="@style/result" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:gravity="center"
+                                android:text="에"
+                                android:textAppearance="@style/result" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:fontFamily="@font/pretendard_bold"
+                            android:gravity="center"
+                            android:text="@string/result_detail_text_1"
+                            android:textAppearance="@style/result">
+                        </TextView>
+                </LinearLayout>
+
+                    <View
+                        android:id="@+id/line_1"
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+
+                        android:layout_alignParentTop="true"
+
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/line"
+                        android:gravity="center">
+
+                    </View>
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                         android:background="@drawable/line"
+                        android:gravity="center">
+
+                    </View>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_forDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/pretendard_light"
+                        android:text="@string/result_detail_text_2"
+                        android:textAlignment="textStart"
+                        android:gravity="start"
+                        android:textAppearance="@style/detail_text">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    >
+<!--직업군 -->
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/job_icon"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginLeft="50dp">-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/ellipse"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:background="@drawable/circle" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="45dp"-->
+<!--                            android:layout_height="45dp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:background="@drawable/job_icon" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/detail_job"-->
+<!--                            android:layout_width="186dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginRight="50dp"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:gravity="start"-->
+<!--                            android:fontFamily="@font/pretendard_light"-->
+<!--                            android:text="@string/result_detail_job"-->
+<!--                            android:textAppearance="@style/detail_text" />-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/detail_line"-->
+<!--                            android:layout_width="195dp"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_below="@+id/detail_job"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginRight="50dp"-->
+<!--                            android:background="@drawable/detail_line"-->
+<!--                            />-->
+
+
+<!--                    </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="50dp"
+
+                        >
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/circle" />
+
+                        <View
+                            android:id="@+id/graduation_hat_icon"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/graduation_hat_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/detail_faculty"
+                            android:layout_width="186dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:textAlignment="textStart"
+                            android:gravity="start"
+                            android:fontFamily="@font/pretendard_light"
+                            android:text="@string/result_datail_faculty"
+                            android:textAppearance="@style/detail_text" />
+
+                        <View
+                            android:id="@+id/detail_faculty_line"
+                            android:layout_width="195dp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/detail_faculty"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:background="@drawable/detail_line"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+                </LinearLayout>
+
+
+                <!--  second result -->
+                <LinearLayout
+                    android:id="@+id/second_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="40dp"
+                    >
+                    <View
+                        android:id="@+id/circle_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle"
+                        />
+                    <View
+                        android:id="@+id/circle_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="100dp"
+                        android:background="@drawable/circle"
+                        />
+                    <View
+                        android:id="@+id/circle_3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="100dp"
+                        android:background="@drawable/circle"
+                        />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/button_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/detail_text"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:id="@+id/details_faculty_text_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/pretendard_semibold"
+                            android:gravity="center"
+                            android:text="@string/result_detail_title"
+                            android:textAppearance="@style/detail_text">
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:id="@+id/result_second"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:gravity="center"
+                                android:text="유럽미주 대학"
+                                android:textAppearance="@style/result" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="1dp"
+                                android:fontFamily="@font/pretendard_bold"
+                                android:gravity="center"
+                                android:text="에"
+                                android:textAppearance="@style/result" />
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:fontFamily="@font/pretendard_bold"
+                            android:gravity="center"
+                            android:text="@string/result_detail_text_1"
+                            android:textAppearance="@style/result">
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/line_second"
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+
+                        android:layout_alignParentTop="true"
+
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/line"
+                        android:gravity="center">
+
+                    </View>
+
+                    <View
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/line"
+                        android:gravity="center">
+
+                    </View>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView_forDetails_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/pretendard_light"
+                        android:textAlignment="textStart"
+                        android:gravity="start"
+                        android:text="@string/result_detail_text_2"
+                        android:textAppearance="@style/detail_text">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+
+                    >
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/job_icon_second"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentLeft="true"-->
+<!--                        android:layout_marginLeft="50dp">-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/ellipse_second"-->
+<!--                            android:layout_width="60dp"-->
+<!--                            android:layout_height="60dp"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:background="@drawable/circle" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="45dp"-->
+<!--                            android:layout_height="45dp"-->
+
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:background="@drawable/job_icon" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/detail_job_second"-->
+<!--                            android:layout_width="186dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginRight="50dp"-->
+<!--                            android:fontFamily="@font/pretendard_light"-->
+<!--                            android:textAlignment="textStart"-->
+<!--                            android:gravity="start"-->
+<!--                            android:text="@string/result_detail_job"-->
+<!--                            android:textAppearance="@style/detail_text" />-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/detail_line_second"-->
+<!--                            android:layout_width="195dp"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_below="@+id/detail_job_second"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginRight="50dp"-->
+<!--                            android:background="@drawable/detail_line"-->
+<!--                            />-->
+
+
+<!--                    </RelativeLayout>-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="50dp"
+
+                        >
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/circle" />
+
+                        <View
+                            android:id="@+id/graduation_hat_icon_second"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/graduation_hat_icon" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/detail_faculty_second"
+                            android:layout_width="186dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:fontFamily="@font/pretendard_light"
+                            android:textAlignment="textStart"
+                            android:gravity="start"
+                            android:text="@string/result_datail_faculty"
+                            android:textAppearance="@style/detail_text" />
+
+                        <View
+                            android:id="@+id/detail_faculty_line_second"
+                            android:layout_width="195dp"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/detail_faculty_second"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="50dp"
+                            android:background="@drawable/detail_line"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+<!--     뒤로 가기 버튼       -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:gravity="center_horizontal"
+                >
+            <RelativeLayout
+                android:id="@+id/back_button_details"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:onClick="backtoButton"
+                android:background="@drawable/main_screen_button"
+                android:clickable="true"
+                >
+                <View
+                    android:layout_width="23dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/arrow_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_back"
+                    android:textAppearance="@style/button_back"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/pretendard_bold"
+                    />
+            </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/text_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="77dp"
+        >
+
+        <TextView
+            android:id="@+id/bufs"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="BUFS"
+            android:textColor="#000000"
+            android:textSize="77sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/text_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bufs"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="내게 맞는 학과 찾기"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="BUFS"
+            android:textAppearance="@style/bufs_shadow">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            >
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:background="@drawable/start_button"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/start_for_start_screen"
+                android:layout_height="wrap_content"
+                android:text="시작하기"
+                android:textSize="60dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/pretendard_extrabold"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickStart"
+            android:text="@string/welcome_screen_logo"
+            android:textAppearance="@style/welcome_screen_logo"
+            android:fontFamily="@font/pretendard_medium"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
