@@ -12,8 +12,3 @@ BUFS Faculty Finder is an Android application designed to help users find the ri
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/BUFS-Faculty-Finder.git
-```
